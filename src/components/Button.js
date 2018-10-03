@@ -9,8 +9,21 @@ const styles = {
 };
 
 export default class Button extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    console.log("Click");
+  }
+
   render() {
     const { title } = this.props;
-    return <button style={styles}>{title}</button>;
+    return (
+      <button style={styles} onClick={this.handleClick}>
+        {title}
+      </button>
+    );
   }
 }
