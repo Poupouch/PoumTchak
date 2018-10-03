@@ -1,2 +1,2 @@
 # PoumTchak
-Practice React Project
+This is a project to practice React.
